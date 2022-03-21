@@ -62,12 +62,17 @@ nav ul li a:active {
 #aside {
     grid-area: aside;
 }
+#quiz {
+    grid-area: quiz;
+}
 
 #topic-article {
-    margin: 5rem 5%; /*not final - adjusting layout (top-bottom, left-right)*/
+    width: 90%;
+    margin: 2rem 5%; /*not final - adjusting layout (top-bottom, left-right)*/
     display: grid;
     /* grid-template-columns: 75% 20%;*/
-    /* gap: 5%; */
+    row-gap: 2%; /*top-bottom gaps*/
+    column-gap: 5%; /*left-right gaps*/
     grid-template-areas: 
         'history'
         'owner'
@@ -76,12 +81,13 @@ nav ul li a:active {
         'software'
         'table'
         'term'
-        'aside';
+        'aside'
+        'quiz';
 }
 
 @media screen and (min-width: 961px) {
     #topic-article {
-        margin: 5rem 10%;
+        /* padding: 5rem 5%; */
         grid-template-areas: 
             'history history history aside'
             'owner owner owner aside'
@@ -89,10 +95,10 @@ nav ul li a:active {
             'compare compare compare compare'
             'software software software software'
             'table table table table'
-            'term term term term';
+            'term term term term'
+            'quiz quiz quiz quiz';
     }
 }
 
 @media screen and (min-width: 481px) {
-
 }
