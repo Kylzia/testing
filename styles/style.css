@@ -38,35 +38,18 @@ nav ul li a:active {
 }
 
 /*---Topic HTML---*/
-#history {
-    grid-area: history;
-}
-#owner {
-    grid-area: owner;
-}
-#image {
-    grid-area: image;
-}
-#compare {
-    grid-area: compare;
-}
-#software {
-    grid-area: software;
-}
-#table {
-    grid-area: table;
-}
-#term {
-    grid-area: term;
-}
-#aside {
-    grid-area: aside;
-}
-#quiz {
-    grid-area: quiz;
-}
+#history { grid-area: history; }
+#owner { grid-area: owner; }
+#image { grid-area: image; }
+#compare { grid-area: compare; }
+#software { grid-area: software; }
+#table { grid-area: table; }
+#term { grid-area: term; }
+#aside { grid-area: aside; }
+#quiz { grid-area: quiz; }
 
 #topic-article {
+    overflow: none;
     width: 90%;
     margin: 2rem 5%; /*not final - adjusting layout (top-bottom, left-right)*/
     display: grid;
