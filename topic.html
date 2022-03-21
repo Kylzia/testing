@@ -9,6 +9,9 @@
     <meta name="author" content="HTML Bois" />
     <title>MP3 Format</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,500;1,500&family=Gravitas+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css"/>
 </head>
 <body>
@@ -26,13 +29,14 @@
     </header>
 
     <main id="main_content">
-        <!-- <section id="topic-hero-section">
+        <section id="topic-hero-section">
             <img src="./images/intro_background.jpeg" alt="image of an MP3 player">
             <h1>MP3 FORMAT</h1>
-        </section> -->
+        </section>
 
-        <article id="topic-article">
-            <section id="history">
+        <article id="topic-article"> <!--Grid-->
+            <div id="topic-graphic"></div>
+            <section id="topic-history">
                 <h2>What is MP3?</h2>
                 MP3 is essentially a coding format that is particularly used for digital audio. 
                 Formally, MP3 can also be named after the MPEG standards, MPEG-1 audio layer 3 OR MPEG-2 Audio Layer 3, which is why it is abbreviated to MP3. 
@@ -46,7 +50,7 @@
                 The technology has had a long history, and has been involved in many scandals, including plagiarism of popular music by parties that do not have the rights to the music. 
             </section>
 
-            <section id="owner">
+            <section id="topic-owner">
                 <h2>Who is managing MP3?</h2>
                 MP3 was originally made primarily by the Fraunhofer Society which is located in germany, with various help from individuals and bodys all around the world. 
                 Later the MPEG group, which was established in 1988, created standards for MP3 to enable more consistent formats so that the technology is easier to share and use effectively.
@@ -57,10 +61,9 @@
                 These standards can be found on the (Moving Picture Experts Group) MPEG website. MPEG continues to oversee the standards that organise MP3 and alternative audio technologies. 
             </section>
 
-            <!--Image-->
-            <!-- <img src="./images/intro_background.jpeg" alt="image of an MP3 player" id="image"> -->
+            <img src="./images/intro_background.jpeg" alt="image of an MP3 player" id="topic-image">
 
-            <section id="compare">
+            <section id="topic-compare">
                 <h2>Audio Compression compared to other formats</h2>
                 MP3 support remains at a near-universal level for various different uses. The main reason is because of its common usage, but also because data can be compressed by up to 10 times more than the storage for the same data on CD quality files.
                 A direct competitor of the MP3 technology that also uses lossy compression is Apple's Advanced Audio Coding (AAC).
@@ -70,7 +73,7 @@
                 Some lossless audio digital data formats are ALAC (Apple Lossless), FLAC (Free Lossless Audio Codec), WMA (Windows Media Audio). 
             </section>
 
-            <section id="software">
+            <section id="topic-software">
                 <h2>How do you open a MP3 file?</h2>
                 <ol>
                     <li>Microsoft Groove Music</li>
@@ -81,34 +84,36 @@
                 </ol>
             </section>
 
-            <table border="1" id="table">
-                <tr>
-                    <th>Version</th>
-                    <th>International Standard</th>
-                    <th>First Edition Public Release Date</th>
-                    <th>Latest Edition Public Release Date</th>
-                </tr>
-                <tr>
-                    <td>MPEG-1 Audio Layer III</td>
-                    <td>ISO/IEC 11172-3 (MPEG-1 Part 3)	</td>
-                    <td>1993</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>MPEG-2 Audio Layer III</td>
-                    <td>ISO/IEC 13818-3 (MPEG-2 Part 3)</td>
-                    <td>1995</td>
-                    <td>1998</td>
-                </tr>
-                <tr>
-                    <td>MPEG-2.5 Audio Layer III</td>
-                    <td>nonstandard, proprietary</td>
-                    <td>2000</td>
-                    <td>2008</td>
-                </tr>
-            </table>
+            <section id="topic-table">
+                <table border="1">
+                    <tr>
+                        <th>Version</th>
+                        <th>International Standard</th>
+                        <th>First Edition Public Release Date</th>
+                        <th>Latest Edition Public Release Date</th>
+                    </tr>
+                    <tr>
+                        <td>MPEG-1 Audio Layer III</td>
+                        <td>ISO/IEC 11172-3 (MPEG-1 Part 3)	</td>
+                        <td>1993</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>MPEG-2 Audio Layer III</td>
+                        <td>ISO/IEC 13818-3 (MPEG-2 Part 3)</td>
+                        <td>1995</td>
+                        <td>1998</td>
+                    </tr>
+                    <tr>
+                        <td>MPEG-2.5 Audio Layer III</td>
+                        <td>nonstandard, proprietary</td>
+                        <td>2000</td>
+                        <td>2008</td>
+                    </tr>
+                </table>
+            </section>
 
-            <section id="term">
+            <section id="topic-term">
                 <h2>List of Terms</h2>
                 <dl>
                     <dt>MPEG</dt>
@@ -124,8 +129,8 @@
                 </dl>
             </section>
 
-            <aside id="aside">
-                <h2>Music Download Sites available in MP3 format</h2>
+            <aside id="topic-aside">
+                <h2>Music Download Sites</h2>
                 <ul>
                     <li><a href="https://music.youtube.com/">Youtube Music</a></li>
                     <li><a href="https://bandcamp.com/">Bandcamp</a></li>
@@ -135,12 +140,67 @@
                 </ul>
             </aside>
 
-            <form id="quiz">
+            <form id="topic-quiz">
                 <button formaction="./quiz.html">
                     Ready for the quiz?
                 </button>
             </form>
         </article>
     </main>
+    
+    <footer id="footer">
+        <h2>HTML BOIS</h2>
+        <div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <p> Name: </p>
+                <p>Email: </p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <p> Name: </p>
+                <p>Email: </p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <p> Name: </p>
+                <p>Email: </p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <p> Name: </p>
+                <p>Email: </p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <p> Name: </p>
+                <p>Email: </p>
+            </div>
+        </div>
+        <div>
+            <br>
+            <br>
+                <a href="https://www.reddit.com/r/ProgrammerHumor/comments/l2hskc/my_html_bois_will_get_this/" target="blank">© HTML BOIS .INC</a>
+                <a href="https://outlook.office.com/mail/" target="blank"> EMAIL US!!</a>
+        </div>
+    </footer>
 </body>
 </html>
